@@ -1,0 +1,16 @@
+{% raw %}
+{% extends "layout.html" %}
+
+{% block page_title %}Forbidden{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <div class="text-center">
+        <h1>403</h1>
+        <p>You don't have the permission to access the requested resource. It is either read-protected or not readable by the
+        server. Please <a href="{{ url_for('user.login') }}">log in</a> or <a href="{{ url_for('user.register') }}">create a new account</a>.
+        </p>
+    </div>
+</div>
+{% endblock %}
+{% endraw %}

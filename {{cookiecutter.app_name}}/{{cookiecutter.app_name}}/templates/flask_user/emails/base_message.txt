@@ -1,0 +1,9 @@
+{% raw %}
+Estimado/a usuario/a,
+
+{% block message %}
+{% endblock %}
+
+Sinceramente,
+{{ app_name }}
+{% endraw %}
