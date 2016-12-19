@@ -6,7 +6,7 @@ from webtest import TestApp
 
 from {{cookiecutter.app_name}}.app import create_app
 from {{cookiecutter.app_name}}.database import db as _db
-from {{cookiecutter.app_name}}.settings import TestConfig
+from {{cookiecutter.app_name}}.settings import TestingConfig
 
 from .factories import UserFactory
 
@@ -14,7 +14,7 @@ from .factories import UserFactory
 @pytest.yield_fixture(scope='function')
 def app():
     """An application for the tests."""
-    _app = create_app(TestConfig)
+    _app = create_app(TestingConfig)
     ctx = _app.test_request_context()
     ctx.push()
 

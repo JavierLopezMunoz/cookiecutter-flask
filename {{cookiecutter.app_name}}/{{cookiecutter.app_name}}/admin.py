@@ -24,8 +24,8 @@ class MyAdminIndexView(AdminLoginRequiredMixin, flask_admin.AdminIndexView):
     pass
 
 
-admin = flask_admin.Admin(name='Admin', index_view=MyAdminIndexView(), template_mode='bootstrap3')
-
-def register_admin_views(app):
+def register_admin(app):
+    admin = flask_admin.Admin(name='Admin', index_view=MyAdminIndexView(), template_mode='bootstrap3')
     admin.add_view(AdminModelView(Role, db.session))
     admin.add_view(AdminModelView(User, db.session))
+    admin.init_app(app)
