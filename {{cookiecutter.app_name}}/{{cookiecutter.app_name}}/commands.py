@@ -41,6 +41,13 @@ def lint(fix_imports):
         name for name in next(os.walk('.'))[1] if not name.startswith('.')]
     files_and_directories = [
         arg for arg in root_files + root_directories if arg not in skip]
+    ignored_codes = [
+        'D100',  # Missing docstring in public module
+        'D101',  # Missing docstring in public class
+        'D102',  # Missing docstring in public method
+        'D103',  # Missing docstring in public function
+        'D104',  # Missing docstring in public package
+    ]
 
     def execute_tool(description, *args):
         """Execute a checking tool with its arguments."""
@@ -52,7 +59,7 @@ def lint(fix_imports):
 
     if fix_imports:
         execute_tool('Fixing import order', 'isort', '-rc')
-    execute_tool('Checking code style', 'flake8')
+    execute_tool('Checking code style', 'flake8', '--ignore={}'.format(','.join(ignored_codes)))
 
 
 @click.command()
