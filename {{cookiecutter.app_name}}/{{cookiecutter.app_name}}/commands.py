@@ -20,12 +20,15 @@ TEST_PATH = os.path.join(PROJECT_ROOT, 'tests')
 
 @click.command()
 @click.option('--pdb', default=False, is_flag=True)
-def test(pdb):
+@click.option('--all', default=False, is_flag=True)
+def test(pdb, all):
     """Run the tests."""
     import pytest
     cmd = [TEST_PATH, '-vv', '-x']
     if pdb:
         cmd.append('--pdb')
+    if not all:
+        cmd += ['-m', 'main']
     rv = pytest.main(cmd)
     exit(rv)
 
