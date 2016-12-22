@@ -24,7 +24,7 @@ environment variables ::
 
 Then run the following commands to bootstrap your environment ::
 
-    pip install -r requirements/dev.txt
+    pip install -r requirements/development.txt
     bower install
     flask run
 
