@@ -28,6 +28,9 @@ pip-log.txt
 .tox
 nosetests.xml
 
+# SQLite DBs
+*.db
+
 # Translations
 *.mo
 
@@ -40,5 +43,8 @@ docs/_build
 
 .webassets-cache
 
+# static libs
+*/static/libs/
+    
 # Virtualenvs
 env/
