@@ -3,7 +3,10 @@
 
 # Testing
 pytest==3.0.6
+ipdb==0.10.2
+WebTest==2.0.24
 factory-boy==2.8.1
+datadiff==2.0.0
 
 # Lint and code style
 flake8==3.3.0
