@@ -19,7 +19,7 @@ Before running shell commands, set the ``FLASK_APP`` and ``FLASK_DEBUG``
 environment variables ::
 
     cd {{cookiecutter.app_name}}
-    export FLASK_APP=$PWD/autoapp.py
+    export FLASK_APP=$PWD/application.py
     export FLASK_DEBUG=1
 
 Then run the following commands to bootstrap your environment ::
