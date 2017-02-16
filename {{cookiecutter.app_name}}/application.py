@@ -6,4 +6,4 @@ from {{cookiecutter.app_name}}.app import create_app
 from {{cookiecutter.app_name}}.settings import DevelopmentConfig, ProductionConfig
 
 
-app = create_app(DevelopmentConfig if get_debug_flag() else ProductionConfig)
+application = create_app(DevelopmentConfig if get_debug_flag() else ProductionConfig)
