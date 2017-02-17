@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Application assets."""
 from flask_assets import Bundle, Environment
 

@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Test configs."""
 from {{cookiecutter.app_name}}.app import create_app
 from {{cookiecutter.app_name}}.settings import DevelopmentConfig, ProductionConfig

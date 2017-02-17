@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """Public section, including homepage and signup."""
 from flask import Blueprint, render_template, redirect, url_for
 
