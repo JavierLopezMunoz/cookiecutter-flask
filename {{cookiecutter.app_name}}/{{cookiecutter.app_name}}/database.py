@@ -1,5 +1,4 @@
 """Database module, including the SQLAlchemy database object and DB-related utilities."""
-from .compativility import basestring
 from .extensions import db
 
 class CRUDMixin(object):
@@ -43,7 +42,7 @@ class SurrogatePK(object):
     def get_by_id(cls, record_id):
         """Get record by ID."""
         if any(
-                (isinstance(record_id, basestring) and record_id.isdigit(),
+                (isinstance(record_id, str) and record_id.isdigit(),
                  isinstance(record_id, (int, float))),
         ):
             return cls.query.get(int(record_id))
