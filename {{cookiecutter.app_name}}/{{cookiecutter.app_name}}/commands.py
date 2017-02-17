@@ -23,11 +23,11 @@ TEST_PATH = os.path.join(PROJECT_ROOT, 'tests')
 def test(pdb, all):
     """Run the tests."""
     import pytest
-    cmd = [TEST_PATH, '-vv', '-x']
+    cmd = [TEST_PATH]
     if pdb:
         cmd.append('--pdb')
     if not all:
-        cmd += ['-m', 'main']
+        cmd += ['-vv', '-x', '-m', 'main']
     rv = pytest.main(cmd)
     exit(rv)
 
