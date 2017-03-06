@@ -1,10 +1,13 @@
 """The app module, containing the app factory function."""
 import flask
+import whitenoise
 
 from {{cookiecutter.app_name}} import commands, public, user
 from {{cookiecutter.app_name}}.admin import register_admin
 from {{cookiecutter.app_name}}.assets import assets
-from {{cookiecutter.app_name}}.extensions import babel, cache, csrf_protect, db, debug_toolbar, migrate
+from {{cookiecutter.app_name}}.extensions import (
+    babel, cache, csrf_protect, db, debug_toolbar, migrate
+)
 from {{cookiecutter.app_name}}.settings import ProductionConfig
 
 
@@ -21,6 +24,7 @@ def create_app(config_object=ProductionConfig):
     register_shellcontext(app)
     register_admin(app)
     register_commands(app)
+    app.wsgi_app = whitenoise.WhiteNoise(app.wsgi_app, root='static/')
     return app
 
 
