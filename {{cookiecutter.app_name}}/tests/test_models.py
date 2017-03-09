@@ -42,13 +42,6 @@ class TestUser:
         assert user.active is True
         assert user.check_password('myprecious')
 
-    def test_check_password(self):
-        """Check password."""
-        user = User.create(email='foo@bar.com',
-                           password='foobarbaz123')
-        assert user.check_password('foobarbaz123') is True
-        assert user.check_password('barfoobaz') is False
-
     def test_roles(self):
         """Add a role to a user."""
         role = Role(name='admin')

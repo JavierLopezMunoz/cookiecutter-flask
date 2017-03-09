@@ -45,11 +45,6 @@ class User(UserMixin, Model):
         with current_app.app_context():
             self.password = current_app.user_manager.generate_password_hash(password)
 
-    def check_password(self, value):
-        """Check password."""
-        with current_app.app_context():
-            return current_app.user_manager.check_password_hash(self.password, value)
-
     @property
     def full_name(self):
         """Full user name."""
