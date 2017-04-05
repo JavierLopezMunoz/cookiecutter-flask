@@ -11,7 +11,7 @@ whitenoise==3.3.0
 # Database
 Flask-SQLAlchemy==2.2
 psycopg2==2.7.1
-PyMySQL==0.7.10
+PyMySQL==0.7.11
 SQLAlchemy==1.1.9
 
 # Migrations
