@@ -4,7 +4,7 @@
 # Testing
 pytest==3.1.1
 ipdb==0.10.3
-Faker==0.7.15
+Faker==0.7.16
 datadiff==2.0.0
 
 # Lint and code style
