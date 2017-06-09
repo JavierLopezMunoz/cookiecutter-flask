@@ -12,10 +12,10 @@ whitenoise==3.3.0
 Flask-SQLAlchemy==2.2
 psycopg2==2.7.1
 PyMySQL==0.7.11
-SQLAlchemy==1.1.9
+SQLAlchemy==1.1.10
 
 # Migrations
-Flask-Migrate==2.0.3
+Flask-Migrate==2.0.4
 
 # Forms
 Flask-WTF==0.14.2
