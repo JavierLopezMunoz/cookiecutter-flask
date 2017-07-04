@@ -8,7 +8,7 @@ Faker==0.7.17
 datadiff==2.0.0
 
 # UI
-pyqt5==5.8.2
+pyqt5==5.9
 
 # Lint and code style
 flake8==3.3.0
