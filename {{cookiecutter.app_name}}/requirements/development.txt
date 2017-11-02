@@ -5,7 +5,7 @@
 pytest
 ipdb
 Faker
-datadiff
+datadiff==2.0.0
 
 # UI
 pyqt5
