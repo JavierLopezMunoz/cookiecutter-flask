@@ -21,4 +21,4 @@ isort
 pep8-naming
 
 # Debug toolbar
-Flask-DebugToolbar
+Flask-DebugToolbar==0.10.1
