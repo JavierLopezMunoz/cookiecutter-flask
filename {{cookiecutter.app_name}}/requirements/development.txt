@@ -13,7 +13,7 @@ pyqt5
 # Lint and code style
 flake8
 flake8-blind-except
-flake8-debugger
+flake8-debugger==1.4.0
 flake8-docstrings
 flake8-isort
 flake8-quotes
