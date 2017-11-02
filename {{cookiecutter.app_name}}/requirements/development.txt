@@ -2,7 +2,7 @@
 -r production.txt
 
 # Testing
-pytest==3.2.1
+pytest==3.2.3
 ipdb==0.10.3
 Faker==0.7.18
 datadiff==2.0.0
