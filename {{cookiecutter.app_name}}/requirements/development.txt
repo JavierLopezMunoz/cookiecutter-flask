@@ -17,7 +17,7 @@ flake8-debugger
 flake8-docstrings
 flake8-isort
 flake8-quotes
-isort
+isort==4.3.4
 pep8-naming
 
 # Debug toolbar
