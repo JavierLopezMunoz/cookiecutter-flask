@@ -4,7 +4,7 @@
 # Testing
 pytest
 ipdb
-Faker
+Faker==0.8.14
 datadiff
 
 # UI
