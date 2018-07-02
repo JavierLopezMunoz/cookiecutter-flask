@@ -8,7 +8,7 @@ Faker
 datadiff
 
 # UI
-pyqt5
+pyqt5==5.11.2
 
 # Lint and code style
 flake8
