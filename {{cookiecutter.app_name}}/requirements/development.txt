@@ -2,7 +2,7 @@
 -r production.txt
 
 # Testing
-pytest
+pytest==3.10.0
 ipdb
 Faker
 datadiff
