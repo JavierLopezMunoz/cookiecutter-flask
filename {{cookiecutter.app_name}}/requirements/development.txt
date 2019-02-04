@@ -18,7 +18,7 @@ flake8-docstrings
 flake8-isort
 flake8-quotes
 isort
-pep8-naming
+pep8-naming==0.8.2
 
 # Debug toolbar
 Flask-DebugToolbar
